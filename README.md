@@ -71,7 +71,7 @@ To learn more about using UI Automator, see the API reference and Testing UI for
 通过SDK Manager 获得 Android Support Repository ：
 
 启动Android SDK Manager，在SDK Manager窗口下
-
+![p2](https://github.com/wenneNetease/uiautomatorviewer/blob/master/image/android%20support%20repository.PNG)
 In the  window, scroll to the end of the Packages list, find the Extras folder and, if necessary, expand to show its contents.
 Select the Android Support Repository item.
 Click the Install packages... button.
