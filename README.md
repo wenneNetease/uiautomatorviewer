@@ -1,6 +1,8 @@
+
 # uiautomatorviewer
 
-UI Automator 测试框架提供了一组api来构建UI测试执行用户程序和系统程序交互。UI Automator api允许您执行操作,如打开设置菜单或应用程序启动器在测试设备。UI Automator测试框架非常适合写黑box-style自动化测试,测试代码不依赖于目标应用程序的内部实现细节。
+UI Automator 测试框架提供了一组api来构建UI测试执行用户程序和系统程序交互。
+UI Automator api允许您执行操作,如打开设置菜单或应用程序启动器在测试设备。UI Automator测试框架非常适合写黑box-style自动化测试,测试代码不依赖于目标应用程序的内部实现细节。
 
 UI Automator测试框架的关键特性包括:
 1.一个查看器(viewer),检查布局层次结构;
