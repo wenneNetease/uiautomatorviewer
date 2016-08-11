@@ -2,17 +2,17 @@
 # uiautomatorviewer
 
 UI Automator 测试框架提供了一组api来构建UI测试执行用户程序和系统程序交互。
-UI Automator api允许您执行操作,如打开设置菜单或应用程序启动器在测试设备。UI Automator测试框架非常适合写黑box-style自动化测试,测试代码不依赖于目标应用程序的内部实现细节。
+UI Automator api允许您执行操作,如打开设置菜单或应用程序启动器在测试设备。UIAutomator测试框架非常适合写黑box-style自动化测试,测试代码不依赖于目标应用程序的内部实现细节。
 
 UI Automator测试框架的关键特性包括:
 
-1.一个查看器(viewer),检查布局层次结构;
+* 一个查看器(viewer),检查布局层次结构;
 
-2.一个API,来检索状态信息,在目标设备上执行操作;
+* 一个API,来检索状态信息,在目标设备上执行操作;
 
-3.apis支持cross-app UI测试;
+* apis支持cross-app UI测试;
 
-4.需要安卓4.3(API级别18)或更高。
+* 需要安卓4.3(API级别18)或更高。
 
 
 #  UI Automator Viewer /UI Automator 查看器
@@ -24,15 +24,15 @@ uiautomatorviewer工具位于 <android-sdk>/tools/ 路径下，如果你已经�
 UI Automator测试框架提供了一个UiDevice类来访问以及在设备上执行操作。您可以调用它的方法来访问设备属性。
 UiDevice类也让您进行如下操作:
 
-1.改变设备的旋转模式
+* 改变设备的旋转模式
 
-2.按D-pad（方向键）按钮
+* 按D-pad（方向键）按钮
 
-3.按‘返回’，‘主页’或者‘菜单’按钮
+* 按‘返回’，‘主页’或者‘菜单’按钮
 
-4.打开隐藏通知栏
+* 打开隐藏通知栏
 
-5.对当前窗口截图
+* 对当前窗口截图
 
 例如,模拟一个‘主页’按钮按下,调用UiDevice.pressHome()方法。
 
@@ -51,7 +51,7 @@ Configurator:允许你设置运行UI Automator测试的关键参数。
 
 
 如下代码展示如何来写一个测试脚本，该脚本实现设备上的默认APP的启动
-
+```
 // Initialize UiDevice instance
 mDevice = UiDevice.getInstance(getInstrumentation());
 
@@ -65,6 +65,8 @@ UiObject allAppsButton = mDevice
 
 // Perform a click on the button to bring up the launcher
 allAppsButton.clickAndWaitForNewWindow();
+```
+
 To learn more about using UI Automator, see the API reference and Testing UI for Multiple Apps training
 
 
@@ -80,7 +82,7 @@ After downloading, the tool installs the Support Repository files to your existi
 The Android Testing Support Library classes are located under the android.support.test package.
 
 To use the Android Testing Support Library in your Gradle project, add these dependencies in your build.gradle file:
-
+```
 dependencies {
   androidTestCompile 'com.android.support.test:runner:0.4'
   // Set this dependency to use JUnit 4 rules
@@ -90,3 +92,4 @@ dependencies {
   // Set this dependency to build and run UI Automator tests
   androidTestCompile 'com.android.support.test.uiautomator:uiautomator-v18:2.1.2'
 }
+```
