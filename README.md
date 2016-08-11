@@ -68,3 +68,25 @@ allAppsButton.clickAndWaitForNewWindow();
 To learn more about using UI Automator, see the API reference and Testing UI for Multiple Apps training
 
 
+通过SDK Manager 获得 Android Support Repository ：
+
+启动Android SDK Manager，在SDK Manager窗口下
+
+In the  window, scroll to the end of the Packages list, find the Extras folder and, if necessary, expand to show its contents.
+Select the Android Support Repository item.
+Click the Install packages... button.
+After downloading, the tool installs the Support Repository files to your existing Android SDK directory. The library files are located in the following subdirectory of your SDK: <sdk>/extras/android/m2repository directory.
+
+The Android Testing Support Library classes are located under the android.support.test package.
+
+To use the Android Testing Support Library in your Gradle project, add these dependencies in your build.gradle file:
+
+dependencies {
+  androidTestCompile 'com.android.support.test:runner:0.4'
+  // Set this dependency to use JUnit 4 rules
+  androidTestCompile 'com.android.support.test:rules:0.4'
+  // Set this dependency to build and run Espresso tests
+  androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.1'
+  // Set this dependency to build and run UI Automator tests
+  androidTestCompile 'com.android.support.test.uiautomator:uiautomator-v18:2.1.2'
+}
