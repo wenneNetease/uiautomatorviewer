@@ -3,14 +3,19 @@
 
 UI Automator 测试框架提供了一组api来构建UI测试执行用户程序和系统程序交互。
 UI Automator api允许您执行操作,如打开设置菜单或应用程序启动器在测试设备。UI Automator测试框架非常适合写黑box-style自动化测试,测试代码不依赖于目标应用程序的内部实现细节。
+
 UI Automator测试框架的关键特性包括:
+
 1.一个查看器(viewer),检查布局层次结构;
+
 2.一个API,来检索状态信息,在目标设备上执行操作;
+
 3.apis支持cross-app UI测试;
+
 4.需要安卓4.3(API级别18)或更高。
 
 
-#UI Automator Viewer /UI Automator 查看器
+#  UI Automator Viewer /UI Automator 查看器
 uiautomatorviewer工具提供了一个方便的GUI来扫描和分析当前Android设备上显示的UI组件。您可以使用这个工具来检查布局层次结构和显示在设备前景的视图UI组件的属性。这个信息可以让你使用UI Automator创建更细粒度的测试,例如通过创建一个UI选择器匹配一个特定的可见属性。
 uiautomatorviewer工具位于 <android-sdk>/tools/ 路径下，如果你已经把该路径添加到path系统变量下，在控制台直接输入 uiautomatorviewer 命令就可打开该工具。
 
