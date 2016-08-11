@@ -67,21 +67,14 @@ UiObject allAppsButton = mDevice
 allAppsButton.clickAndWaitForNewWindow();
 ```
 
-To learn more about using UI Automator, see the API reference and Testing UI for Multiple Apps training
-
-
 通过SDK Manager 获得 Android Support Repository ：
 
-启动Android SDK Manager，在SDK Manager窗口下
+启动Android SDK Manager，在SDK Manager窗口下按照下图所示找到 Android Support Repository 项，选中下载安装
 ![p2](https://github.com/wenneNetease/uiautomatorviewer/blob/master/image/android%20support%20repository.PNG)
-In the  window, scroll to the end of the Packages list, find the Extras folder and, if necessary, expand to show its contents.
-Select the Android Support Repository item.
-Click the Install packages... button.
-After downloading, the tool installs the Support Repository files to your existing Android SDK directory. The library files are located in the following subdirectory of your SDK: <sdk>/extras/android/m2repository directory.
+下载后，Android Support Repository文件存在于: <sdk>/extras/android/m2repository 目录下.
+Android Testing Support Library classes 位于 android.support.test package 里。
 
-The Android Testing Support Library classes are located under the android.support.test package.
-
-To use the Android Testing Support Library in your Gradle project, add these dependencies in your build.gradle file:
+按如下方式添加这些依赖库到你的工程build.gradle文件里，这样你就可以使用这些库里的类了。
 ```
 dependencies {
   androidTestCompile 'com.android.support.test:runner:0.4'
@@ -93,3 +86,5 @@ dependencies {
   androidTestCompile 'com.android.support.test.uiautomator:uiautomator-v18:2.1.2'
 }
 ```
+
+本文参考[参考资料](https://developer.android.com/topic/libraries/testing-support-library/index.html#uia-viewer)
