@@ -18,7 +18,7 @@ UI Automator测试框架的关键特性包括:
 #  UI Automator Viewer /UI Automator 查看器
 uiautomatorviewer工具提供了一个方便的GUI来扫描和分析当前Android设备上显示的UI组件。您可以使用这个工具来检查布局层次结构和显示在设备前景的视图UI组件的属性。这个信息可以让你使用UI Automator创建更细粒度的测试,例如通过创建一个UI选择器匹配一个特定的可见属性。
 uiautomatorviewer工具位于 <android-sdk>/tools/ 路径下，如果你已经把该路径添加到path系统变量下，在控制台直接输入 uiautomatorviewer 命令就可打开该工具。
-
+![](https://github.com/wenneNetease/uiautomatorviewer/blob/master/image/uiautomatorviewer.PNG)
 
 #  Access to device state /访问设备状态
 UI Automator测试框架提供了一个UiDevice类来访问以及在设备上执行操作。您可以调用它的方法来访问设备属性。
